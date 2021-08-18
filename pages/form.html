@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <style>
+    .form-control.error input{
+    border-color:#f44336;
+}
+.form-control small{
+color:#f44336;
+visibility: hidden;
+padding: 2px 2px 2px 2px;
+}
+.form-control.error small{
+  visibility: visible;
+}
+
+.form-control.success input{
+  border-color: green;
+}
+    .format{
+  padding-top: 20px;
+  padding-right: 500px;
+  padding-bottom: 20px;
+  padding-left: 500px;
+    }
+    #Username , #Email , #Password , #Confirm_Password , #Mobile{
+      width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  background: #f1f1f1;
+    }
+  button {
+  padding: 14px 20px;
+  background-color: #67ad79;
+}
+#Reset{
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+button, #Reset {
+  float: left;
+  width: 50%;
+} 
+
+
+  </style>
+  </head>
+<body>
+
+  <center><h2>Registration Forms</h2></center>
+<div class="format">
+    <div id="form" class="form">
+
+    <div class="form-control">
+  <label for="Username">Username:</label><br>
+  <input type="text" id="Username" name="fname" value=""><br>
+  <small></small>
+</div>  
+<div class="form-control">
+  <label for="Email">Email:</label><br>
+  <input type="text" id="Email" name="lname" value=""><br>
+  <small></small>
+</div> 
+<div class="form-control">
+  <label for="Password">Password:</label><br>
+  <input type="text" id="Password" name="Password" value=""><br>
+  <small></small>
+</div> 
+<div class="form-control">
+  <label for="Confirm_Password">Confirm Password:</label><br>
+  <input type="text" id="Confirm_Password" name="Email" value=""></br>
+  <small></small>
+</div> 
+  <!-- <input type="submit" id="Submit" value="Submit"> -->
+  <Button onclick="validate()" type="button">Submit</Button>
+  <input type="reset" id="Reset" value="Reset">
+</div>
+</div>
+<script src="../js/valid.js"></script>
+</body>
+</html>
